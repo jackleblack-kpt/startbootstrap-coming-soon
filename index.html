@@ -78,6 +78,12 @@
     <!-- Custom scripts for this template -->
     <script src="js/coming-soon.min.js"></script>
 
+    <script>
+    $(document).ready(function() {
+        //FORCE VIDEO PLAY - SAFARI 11 ISSUE
+            $('body').data('vide').getVideoObject().play();
+    });
+</script>
   </body>
 
 </html>
